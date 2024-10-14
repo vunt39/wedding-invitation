@@ -1,0 +1,39 @@
+{
+  "date": "Chủ nhật Ngày 24-11-2024",
+  "location": "Chú rể: Nhà văn hóa thôn Đào Nguyên, xã An Thượng, Hoài Đức, Hà Nội",
+  "location2": "Cô dâu: số nhà 18, ngách 76/3 đường La Tinh 2, Đông La, Hoài Đức, Hà Nội",
+  "gretting": "Ngày này cuối cùng cũng đã tới. Sẽ thật tuyệt vời nếu bạn có thể tới chung vui, hãy tới nhé.",
+  "groom": {
+    "name": "Nguyễn Trọng Vũ",
+    "account_number": "MB Bank 9704229228148479",
+    "parents": {
+      "mother": {
+        "name": "Nguyễn Thị Huyền",
+        "account_number": "MB Bank 9704229228148479"
+      },
+      "father": {
+        "name": "Nguyễn Trọng Lực",
+        "account_number": "MB Bank 9704229228148479"
+      }
+    }
+  },
+  "bride": {
+    "name": "Nguyễn Thị Linh",
+    "account_number": "MB Bank 2200121101999",
+    "parents": {
+      "mother": {
+        "name": "Nguyễn Thị Nhung",
+        "account_number": "MB Bank 2200121101999"
+      },
+      "father": {
+        "name": "Nguyễn Ngọc Chức",
+        "account_number": "MB Bank 2200121101999"
+      }
+    }
+  },
+  "kakaotalk": {
+    "api_token": "",
+    "wedding_invitation_url": "https://vu.com/wedding_invitation",
+    "share_image": ""
+  }
+}
