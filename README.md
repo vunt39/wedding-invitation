@@ -7,8 +7,6 @@ Nếu bạn thích hoặc sử dụng kho lưu trữ này, vui lòng Star and Fo
 ## Template Preview
 
 ### Wedding Invitation
-![Preview](./Preview.gif)
-
 ## Nội dung và chức năng có trong mẫu
 - In ngày cưới, địa điểm và lời chúc
 - Album ảnh
