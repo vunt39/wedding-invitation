@@ -63,7 +63,10 @@ export default function CongratulatoryMoney({
           <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
               <Title>Hãy tới dự đám cưới chung vui cùng chúng tôi nhé</Title>
           </Divider>
-          <Content>Tài khoản cô dâu chú rể.</Content>
+          <Content>
+              Tài khoản cô dâu chú rể (chỉ dùng cho trường hợp bạn không thể
+              tới. 2 vợ chồng mình sẽ rất cảm ơn sự có mặt của bạn tại đám cưới)
+          </Content>
           <ContactButton onClick={() => setGroomVisible(true)}>
               {/* <CheckCircleTwoTone
                   style={{ fontSize: 64, marginBottom: 16 }}
@@ -101,7 +104,7 @@ export default function CongratulatoryMoney({
               okButtonProps={{ style: { display: 'none' } }}
               footer={null}
           >
-              {data?.groom?.parents?.father && (
+              {/* {data?.groom?.parents?.father && (
                   <div>
                       <b>Bố) {data?.groom?.parents?.father?.name}</b>
                       <Divider type="vertical" />
@@ -138,7 +141,7 @@ export default function CongratulatoryMoney({
                           </Button>
                       </CopyToClipboard>
                   </div>
-              )}
+              )} */}
               {data?.groom && (
                   <div>
                       <b>Chú rể {data?.groom?.name}</b>
@@ -148,9 +151,7 @@ export default function CongratulatoryMoney({
                               type="text"
                               style={{ padding: 0, margin: 0 }}
                               onClick={() =>
-                                  message.success(
-                                      'STK đã được sao chép.'
-                                  )
+                                  message.success('STK đã được sao chép.')
                               }
                           >
                               {data?.groom?.account_number}
@@ -174,7 +175,7 @@ export default function CongratulatoryMoney({
               okButtonProps={{ style: { display: 'none' } }}
               footer={null}
           >
-              {data?.bride?.parents?.father && (
+              {/* {data?.bride?.parents?.father && (
                   <div>
                       <b>Bố: {data?.bride?.parents?.father?.name}</b>
                       <Divider type="vertical" />
@@ -211,7 +212,7 @@ export default function CongratulatoryMoney({
                           </Button>
                       </CopyToClipboard>
                   </div>
-              )}
+              )} */}
               {data?.bride && (
                   <div>
                       <b>Cô dâu {data?.bride?.name}</b>
