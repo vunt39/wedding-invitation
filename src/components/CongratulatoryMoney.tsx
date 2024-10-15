@@ -12,11 +12,13 @@ const Wrapper = styled("div", {
   textAlign: "center",
 });
 
-const Title = styled("p", {
-  fontSize: "2vh",
-  fontWeight: "bold",
-  opacity: 0.85,
-  marginBottom: 0,
+const Title = styled('p', {
+    fontSize: '2vh',
+    fontWeight: 'bold',
+    opacity: 0.85,
+    marginBottom: 0,
+    marginLeft: 24,
+    marginRight: 24,
 });
 
 const Content = styled('p', {
