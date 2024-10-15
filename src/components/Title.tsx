@@ -111,7 +111,7 @@ export default function Title({ data }: TitleProps) {
 
     return (
         <Layout>
-            {!isPlaying && <PosterImage src="/assets/anh_cuoi_4.jpg" />}
+            {!isPlaying && <PosterImage src="/assets/anh_cuoi_4.jpg" alt="" />}
             {!isLoading && (
                 <VideoBackground
                     ref={videoRef}
