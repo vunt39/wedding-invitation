@@ -1,5 +1,5 @@
 import { styled } from "@stitches/react";
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Divider } from 'antd';
 
 const Layout = styled('div', {
@@ -76,7 +76,34 @@ type TitleProps = {
 
 export default function Title({ data }: TitleProps) {
     const [isPlaying, setIsPlaying] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const videoRef = useRef(null);
+
+    const images = ['./assets/anh_cuoi_4.jpg'];
+
+    useEffect(() => {
+        // Function để tải hình ảnh
+        const preloadImages = (imageUrls) => {
+            const imagePromises = imageUrls.map((url) => {
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.src = url;
+                    img.onload = resolve; // Resolve promise khi hình ảnh đã tải xong
+                    img.onerror = reject; // Reject promise nếu có lỗi xảy ra
+                });
+            });
+            return Promise.all(imagePromises); // Đợi tất cả hình ảnh tải xong
+        };
+
+        // Gọi function preloadImages
+        preloadImages(images)
+            .then(() => {
+                setIsLoading(false); // Đặt isLoading thành false khi tất cả hình ảnh đã tải
+            })
+            .catch((error) => {
+                console.error('Error loading images:', error);
+            });
+    }, [images]);
 
     const handleVideoPlay = () => {
         setIsPlaying(true);
@@ -85,18 +112,20 @@ export default function Title({ data }: TitleProps) {
     return (
         <Layout>
             {!isPlaying && <PosterImage src="/assets/anh_cuoi_4.jpg" />}
-            <VideoBackground
-                ref={videoRef}
-                autoPlay
-                loop
-                muted
-                playsInline={true}
-                poster="./assets/anh_cuoi_4.jpg"
-                onPlay={handleVideoPlay}
-                style={{ opacity: isPlaying ? 1 : 0 }}
-            >
-                <source src="./assets/video2.mp4" type="video/mp4" />
-            </VideoBackground>
+            {!isLoading && (
+                <VideoBackground
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline={true}
+                    poster="./assets/anh_cuoi_4.jpg"
+                    onPlay={handleVideoPlay}
+                    style={{ opacity: isPlaying ? 1 : 0 }}
+                >
+                    <source src="./assets/video2.mp4" type="video/mp4" />
+                </VideoBackground>
+            )}
             <TitleWrapper>
                 <WeddingInvitation>Thư mời đám cưới</WeddingInvitation>
                 <GroomBride>
