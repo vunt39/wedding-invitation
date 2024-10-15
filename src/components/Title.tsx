@@ -1,6 +1,7 @@
 import { styled } from "@stitches/react";
 import React, { useRef, useState, useEffect } from 'react';
 import { Divider } from 'antd';
+import styles from '../styles/spinner.module.css';
 
 const Layout = styled('div', {
     width: '100%',
@@ -55,18 +56,9 @@ const WeddingInvitation = styled('p', {
     marginBottom: 10,
 });
 
-const Spinner = styled('div', {
-    border: '8px solid #f3f3f3',
-    borderTop: '8px solid #3498db',
-    borderRadius: '50%',
-    width: '50px',
-    height: '50px',
-    animation: 'spin 1s linear infinite',
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-});
+const Spinner = () => (
+    <div className={styles.spinner} /> // Sử dụng class từ file CSS
+);
 
 const GroomBride = styled('p', {
     fontSize: '3.5vh',
