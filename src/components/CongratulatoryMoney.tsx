@@ -13,7 +13,7 @@ const Wrapper = styled("div", {
 });
 
 const Title = styled('p', {
-    fontSize: '2vh',
+    fontSize: '3vh',
     fontWeight: 'bold',
     opacity: 0.85,
     marginTop: 0,
@@ -23,7 +23,7 @@ const Title = styled('p', {
 });
 
 const Content = styled('p', {
-    fontSize: '1.5vh',
+    fontSize: '2vh',
     lineHeight: 1.75,
     opacity: 0.75,
     marginBottom: 24,
@@ -32,14 +32,14 @@ const Content = styled('p', {
 });
 
 const SubContent = styled('p', {
-    fontSize: '1.3vh',
+    fontSize: '1.6vh',
     lineHeight: 1.75,
     opacity: 0.75,
     marginBottom: 24,
 });
 
 const Description = styled('p', {
-    fontSize: '1.3vh',
+    fontSize: '1.6vh',
     lineHeight: 1.75,
     opacity: 0.65,
     marginTop: 8,
@@ -84,7 +84,8 @@ export default function CongratulatoryMoney({
                 <img
                     style={{ borderRadius: '20px' }}
                     src="./assets/tk_vu.jpeg"
-                    height="300px"
+                    width="300px"
+                    height="350px"
                     alt=""
                 />
                 <br />
@@ -98,7 +99,8 @@ export default function CongratulatoryMoney({
                 <img
                     style={{ borderRadius: '20px' }}
                     src="./assets/tk_linh.jpg"
-                    height="300px"
+                    width="300px"
+                    height="350px"
                     alt=""
                 />
                 <br />
