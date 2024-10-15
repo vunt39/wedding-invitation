@@ -1,12 +1,13 @@
 import { styled } from "@stitches/react";
-import { Divider } from "antd";
+import React, { useRef, useState } from 'react';
+import { Divider } from 'antd';
 
-const Layout = styled("div", {
-  width: "100%",
-  height: "100vh",
-  overflow: "hidden",
-  margin: "0px auto",
-  position: "relative",
+const Layout = styled('div', {
+    width: '100%',
+    height: '100vh',
+    overflow: 'hidden',
+    margin: '0px auto',
+    position: 'relative',
 });
 
 const TitleWrapper = styled('div', {
@@ -33,6 +34,18 @@ const VideoBackground = styled('video', {
     maxWidth: '100%',
     maxHeight: '100%',
     minHeight: 480,
+    transition: 'opacity 1s ease-in-out',
+});
+
+const PosterImage = styled('img', {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    opacity: 1,
+    transition: 'opacity 1s ease-in-out', // Thêm transition cho opacity
 });
 
 const WeddingInvitation = styled('p', {
@@ -62,14 +75,27 @@ type TitleProps = {
 };
 
 export default function Title({ data }: TitleProps) {
+    const [isPlaying, setIsPlaying] = useState(false);
+    const videoRef = useRef(null);
+
+    const handleVideoPlay = () => {
+        setIsPlaying(true);
+    };
+
     return (
         <Layout>
+            {!isPlaying && (
+                <PosterImage src="/assets/anh_cuoi_4.jpg" alt="Poster" />
+            )}
             <VideoBackground
+                ref={videoRef}
                 autoPlay
                 loop
                 muted
                 playsInline={true}
                 poster="./assets/anh_cuoi_4.jpg"
+                onPlay={handleVideoPlay}
+                style={{ opacity: isPlaying ? 1 : 0 }}
             >
                 <source src="./assets/video2.mp4" type="video/mp4" />
             </VideoBackground>
