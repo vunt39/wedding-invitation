@@ -19,11 +19,13 @@ const Title = styled("p", {
   marginBottom: 0,
 });
 
-const Content = styled("p", {
-  fontSize: "1.5vh",
-  lineHeight: 1.75,
-  opacity: 0.75,
-  marginBottom: 24,
+const Content = styled('p', {
+    fontSize: '1.5vh',
+    lineHeight: 1.75,
+    opacity: 0.75,
+    marginBottom: 24,
+    marginLeft: 24,
+    marginRight: 24,
 });
 
 const SubContent = styled("p", {

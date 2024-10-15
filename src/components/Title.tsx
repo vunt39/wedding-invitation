@@ -36,19 +36,22 @@ const VideoBackground = styled('video', {
 const WeddingInvitation = styled('p', {
     fontSize: '2vh',
     opacity: 0.45,
-    marginBottom: 16,
+    marginTop: 25,
+    marginBottom: 10,
 });
 
 const GroomBride = styled('p', {
     fontSize: '3.5vh',
     fontWeight: 'bold',
     opacity: 0.9,
+    marginTop: 10,
     marginBottom: 16,
 });
 
 const Schedule = styled('p', {
     fontSize: '2vh',
     opacity: 0.65,
+    marginTop: 10,
     marginBottom: 24,
 });
 
