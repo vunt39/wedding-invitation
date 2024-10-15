@@ -38,8 +38,28 @@ const images = [
         thumbnail: './assets/anh_cuoi_5.jpg',
     },
     {
-        original: './assets/anh_cuoi_5.jpg',
-        thumbnail: './assets/anh_cuoi_5.jpg',
+        original: './assets/anh_cuoi_6.jpg',
+        thumbnail: './assets/anh_cuoi_6.jpg',
+    },
+    {
+        original: './assets/anh_cuoi_7.jpg',
+        thumbnail: './assets/anh_cuoi_7.jpg',
+    },
+    {
+        original: './assets/anh_cuoi_8.jpg',
+        thumbnail: './assets/anh_cuoi_8.jpg',
+    },
+    {
+        original: './assets/anh_cuoi_9.jpg',
+        thumbnail: './assets/anh_cuoi_9.jpg',
+    },
+    {
+        original: './assets/anh_cuoi_10.jpg',
+        thumbnail: './assets/anh_cuoi_10.jpg',
+    },
+    {
+        original: './assets/anh_cuoi_11.jpg',
+        thumbnail: './assets/anh_cuoi_11.jpg',
     },
 ];
 
