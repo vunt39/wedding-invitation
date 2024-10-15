@@ -63,7 +63,7 @@ export default function Title({ data }: TitleProps) {
     return (
         <Layout>
             <VideoBackground autoPlay loop muted playsInline={true}>
-                <source src="./assets/video.mp4" type="video/mp4" />
+                <source src="./assets/video2.mp4" type="video/mp4" />
             </VideoBackground>
             <TitleWrapper>
                 <WeddingInvitation>Thư mời đám cưới</WeddingInvitation>
