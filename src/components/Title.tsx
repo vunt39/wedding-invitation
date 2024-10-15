@@ -126,7 +126,6 @@ export default function Title({ data }: TitleProps) {
                     playsInline={true}
                     poster="./assets/anh_cuoi_4.jpg"
                     onPlay={handleVideoPlay}
-                    style={{ opacity: isPlaying ? 1 : 0 }}
                 >
                     <source src="./assets/video2.mp4" type="video/mp4" />
                 </VideoBackground>
