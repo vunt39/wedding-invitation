@@ -96,8 +96,8 @@ export default function Title({ data }: TitleProps) {
 
     useEffect(() => {
         // Function để tải hình ảnh
-        const preloadImages = (imageUrls) => {
-            const imagePromises = imageUrls.map((url) => {
+        const preloadImages = (imageUrls: any) => {
+            const imagePromises = imageUrls.map((url: any) => {
                 return new Promise((resolve, reject) => {
                     const img = new Image();
                     img.src = url;
