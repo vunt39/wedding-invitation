@@ -22,14 +22,6 @@ const Content = styled('div', {
     textAlign: 'center',
 });
 
-const GroomBride = styled('p', {
-    fontSize: '2vh',
-    lineHeight: 1.75,
-    opacity: 0.85,
-    marginBottom: 0,
-    width: '100%',
-    textAlign: 'center',
-});
 
 type GrettingProps = {
     data?: Data;
@@ -51,11 +43,6 @@ export default function Gretting({ data }: GrettingProps) {
                     );
                 })}
             </Content>
-            {/* <GroomBride>
-              Chú rể {data?.groom?.name}
-              <br />
-              Cô dâu {data?.bride?.name}
-          </GroomBride> */}
         </Wrapper>
     );
 }

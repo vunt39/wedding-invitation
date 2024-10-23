@@ -68,7 +68,7 @@ export default function Home() {
               <Gretting data={JsonData} />
               <Gallery />
               <Location />
-              <CongratulatoryMoney data={JsonData} />
+              {/* <CongratulatoryMoney data={JsonData} /> */}
               <Share data={JsonData} />
               <Footer>Copyright © 2024</Footer>
           </main>
