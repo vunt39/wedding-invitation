@@ -65,10 +65,6 @@ export default function CongratulatoryMoney({
 
     return (
         <Wrapper>
-            {/* <Divider
-              plain
-              style={{ marginTop: 0, marginBottom: 32, paddingInline: 0 }}
-          > */}
             <Title>Hãy tới dự đám cưới chung vui cùng chúng tôi nhé</Title>
             {/* </Divider> */}
             <Content>
@@ -84,8 +80,8 @@ export default function CongratulatoryMoney({
                 <img
                     style={{ borderRadius: '20px' }}
                     src="./assets/tk_vu.jpeg"
-                    width="300px"
-                    height="350px"
+                    width="200px"
+                    height="250px"
                     alt=""
                 />
                 <br />
@@ -99,8 +95,8 @@ export default function CongratulatoryMoney({
                 <img
                     style={{ borderRadius: '20px' }}
                     src="./assets/tk_linh.jpg"
-                    width="300px"
-                    height="350px"
+                    width="200px"
+                    height="250px"
                     alt=""
                 />
                 <br />
@@ -115,44 +111,6 @@ export default function CongratulatoryMoney({
                 okButtonProps={{ style: { display: 'none' } }}
                 footer={null}
             >
-                {/* {data?.groom?.parents?.father && (
-                  <div>
-                      <b>Bố) {data?.groom?.parents?.father?.name}</b>
-                      <Divider type="vertical" />
-                      <CopyToClipboard
-                          text={data?.groom?.parents?.father?.account_number}
-                      >
-                          <Button
-                              type="text"
-                              style={{ padding: 0, margin: 0 }}
-                              onClick={() =>
-                                  message.success('STK đã được sao chép.')
-                              }
-                          >
-                              {data?.groom?.parents?.father?.account_number}
-                          </Button>
-                      </CopyToClipboard>
-                  </div>
-              )}
-              {data?.groom?.parents?.mother && (
-                  <div style={{ marginTop: 24, marginBottom: 24 }}>
-                      <b>Mẹ) {data?.groom?.parents?.mother.name}</b>
-                      <Divider type="vertical" />
-                      <CopyToClipboard
-                          text={data?.groom?.parents?.mother.account_number}
-                      >
-                          <Button
-                              type="text"
-                              style={{ padding: 0, margin: 0 }}
-                              onClick={() =>
-                                  message.success('STK đã được sao chép.')
-                              }
-                          >
-                              {data?.groom?.parents?.mother.account_number}
-                          </Button>
-                      </CopyToClipboard>
-                  </div>
-              )} */}
                 {data?.groom && (
                     <div>
                         <b>Chú rể {data?.groom?.name}</b>
@@ -186,44 +144,6 @@ export default function CongratulatoryMoney({
                 okButtonProps={{ style: { display: 'none' } }}
                 footer={null}
             >
-                {/* {data?.bride?.parents?.father && (
-                  <div>
-                      <b>Bố: {data?.bride?.parents?.father?.name}</b>
-                      <Divider type="vertical" />
-                      <CopyToClipboard
-                          text={data?.bride?.parents?.father?.account_number}
-                      >
-                          <Button
-                              type="text"
-                              style={{ padding: 0, margin: 0 }}
-                              onClick={() =>
-                                  message.success('STK đã được sao chép.')
-                              }
-                          >
-                              {data?.bride?.parents?.father?.account_number}
-                          </Button>
-                      </CopyToClipboard>
-                  </div>
-              )}
-              {data?.bride?.parents?.mother && (
-                  <div style={{ marginTop: 24, marginBottom: 24 }}>
-                      <b>Mẹ: {data?.bride?.parents?.mother?.name}</b>
-                      <Divider type="vertical" />
-                      <CopyToClipboard
-                          text={data?.bride?.parents?.mother?.account_number}
-                      >
-                          <Button
-                              type="text"
-                              style={{ padding: 0, margin: 0 }}
-                              onClick={() =>
-                                  message.success('STK đã được sao chép.')
-                              }
-                          >
-                              {data?.bride?.parents?.mother?.account_number}
-                          </Button>
-                      </CopyToClipboard>
-                  </div>
-              )} */}
                 {data?.bride && (
                     <div>
                         <b>Cô dâu {data?.bride?.name}</b>

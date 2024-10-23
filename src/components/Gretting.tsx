@@ -14,49 +14,48 @@ const Title = styled("p", {
   marginBottom: 0,
 });
 
-const Content = styled("div", {
-  fontSize: "2.5vh",
-  lineHeight: 1.75,
-  opacity: 0.75,
-  marginBottom: 16,
-  width: "100%",
-  textAlign: "center",
+const Content = styled('div', {
+    fontSize: '2.5vh',
+    lineHeight: 1.75,
+    opacity: 0.75,
+    width: '100%',
+    textAlign: 'center',
 });
 
-const GroomBride = styled("p", {
-  fontSize: "2vh",
-  lineHeight: 1.75,
-  opacity: 0.85,
-  marginBottom: 0,
-  width: "100%",
-  textAlign: "center",
+const GroomBride = styled('p', {
+    fontSize: '2vh',
+    lineHeight: 1.75,
+    opacity: 0.85,
+    marginBottom: 0,
+    width: '100%',
+    textAlign: 'center',
 });
 
 type GrettingProps = {
-  data?: Data;
+    data?: Data;
 };
 
 export default function Gretting({ data }: GrettingProps) {
-  return (
-      <Wrapper>
-          <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
-              <Title>Vũ và Linh sắp tiến tới hôn nhân</Title>
-          </Divider>
-          <Content>
-              {data?.gretting?.split('\n')?.map((value, index) => {
-                  return (
-                      <div key={index}>
-                          {value}
-                          <br />
-                      </div>
-                  );
-              })}
-          </Content>
-          <GroomBride>
+    return (
+        <Wrapper>
+            <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
+                <Title>Vũ và Linh sắp tiến tới hôn nhân</Title>
+            </Divider>
+            <Content>
+                {data?.gretting?.split('\n')?.map((value, index) => {
+                    return (
+                        <div key={index}>
+                            {value}
+                            <br />
+                        </div>
+                    );
+                })}
+            </Content>
+            {/* <GroomBride>
               Chú rể {data?.groom?.name}
               <br />
               Cô dâu {data?.bride?.name}
-          </GroomBride>
-      </Wrapper>
-  );
+          </GroomBride> */}
+        </Wrapper>
+    );
 }
