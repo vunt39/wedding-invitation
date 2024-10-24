@@ -134,9 +134,10 @@ export default function Title({ data }: TitleProps) {
                 </VideoBackground>
             )}
             <TitleWrapper>
-                <WeddingInvitation>Thư mời đám cưới</WeddingInvitation>
+                <WeddingInvitation>Thiệp mời đám cưới</WeddingInvitation>
                 <GroomBride>
-                    {data?.groom?.name} &#38; {data?.bride?.name}
+                    <span style={{ whiteSpace: 'nowrap' }}>Trọng Vũ</span> &#38;{' '}
+                    <span style={{ whiteSpace: 'nowrap' }}>Nguyễn Linh</span>
                 </GroomBride>
                 <Schedule>
                     {data?.date}
