@@ -124,11 +124,11 @@ export default function Title({ data }: TitleProps) {
                     loop
                     muted
                     playsInline={true}
-                    poster="./wedding-invitation/assets/anh_cuoi_4.jpg"
+                    poster="/wedding-invitation/assets/anh_cuoi_4.jpg"
                     onPlay={handleVideoPlay}
                 >
                     <source
-                        src="./wedding-invitation/assets/video2.mp4"
+                        src="/wedding-invitation/assets/video2.mp4"
                         type="video/mp4"
                     />
                 </VideoBackground>
