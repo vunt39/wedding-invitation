@@ -84,7 +84,7 @@ export default function Title({ data }: TitleProps) {
     const [isLoading, setIsLoading] = useState(true);
     const videoRef = useRef(null);
 
-    const images = ['/assets/anh_cuoi_4.jpg'];
+    const images = ['/wedding-invitation/assets/anh_cuoi_4.jpg'];
 
     useEffect(() => {
         // Function để tải hình ảnh
@@ -124,10 +124,13 @@ export default function Title({ data }: TitleProps) {
                     loop
                     muted
                     playsInline={true}
-                    poster="/assets/anh_cuoi_4.jpg"
+                    poster="/wedding-invitation/assets/anh_cuoi_4.jpg"
                     onPlay={handleVideoPlay}
                 >
-                    <source src="/assets/video2.mp4" type="video/mp4" />
+                    <source
+                        src="/wedding-invitation/assets/video2.mp4"
+                        type="video/mp4"
+                    />
                 </VideoBackground>
             )}
             <TitleWrapper>
