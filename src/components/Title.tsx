@@ -128,6 +128,10 @@ export default function Title({ data }: TitleProps) {
                     onPlay={handleVideoPlay}
                 >
                     <source
+                        src="/wedding-invitation/assets/video2.webm"
+                        type="video/webm"
+                    />
+                    <source
                         src="/wedding-invitation/assets/video2.mp4"
                         type="video/mp4"
                     />
