@@ -61,10 +61,6 @@ const images = [
         original: '/wedding-invitation/assets/anh_cuoi_11.jpg',
         thumbnail: '/wedding-invitation/assets/anh_cuoi_11.jpg',
     },
-    {
-        original: '/wedding-invitation/assets/anh_cuoi_12.jpg',
-        thumbnail: '/wedding-invitation/assets/anh_cuoi_12.jpg',
-    },
 ];
 
 export default function Gallery() {
